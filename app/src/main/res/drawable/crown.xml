@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="280dp"
+    android:height="200dp"
+    android:viewportWidth="680"
+    android:viewportHeight="480">
+
+    <!-- ═══════════════════════════════════════════
+         CROWN BODY — shadow layer
+         ═══════════════════════════════════════════ -->
+    <path
+        android:fillColor="#C9952A"
+        android:pathData="M130,340 L130,290 L185,180 L235,265 L340,120 L445,265 L495,180 L550,290 L550,340 Z"/>
+
+    <!-- Crown main body (gold) -->
+    <path
+        android:fillColor="#F5C518"
+        android:pathData="M125,335 L125,285 L180,172 L230,258 L340,112 L450,258 L500,172 L555,285 L555,335 Z"/>
+
+    <!-- Spire inner shading -->
+    <path
+        android:fillColor="#C9952A"
+        android:pathData="M180,172 L210,270 L230,258 Z M340,112 L325,255 L355,255 Z M500,172 L470,270 L450,258 Z"/>
+
+    <!-- Spire highlight -->
+    <path
+        android:fillColor="#FFE680"
+        android:pathData="M178,174 L168,240 L185,230 Z M340,114 L330,200 L340,195 Z M502,174 L512,240 L496,230 Z"/>
+
+    <!-- Crown body outline -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#A87C10"
+        android:strokeWidth="1.5"
+        android:pathData="M125,335 L125,285 L180,172 L230,258 L340,112 L450,258 L500,172 L555,285 L555,335"/>
+
+    <!-- ═══════════════════════════════════════════
+         BAND
+         ═══════════════════════════════════════════ -->
+    <!-- Band shadow -->
+    <path
+        android:fillColor="#A87C10"
+        android:pathData="M118,318 Q118,312 124,312 L556,312 Q562,312 562,318 L562,376 Q562,382 556,382 L124,382 Q118,382 118,376 Z"/>
+
+    <!-- Band main -->
+    <path
+        android:fillColor="#D4A017"
+        android:pathData="M115,314 Q115,308 121,308 L559,308 Q565,308 565,314 L565,372 Q565,378 559,378 L121,378 Q115,378 115,372 Z"/>
+
+    <!-- Band top highlight strip -->
+    <path
+        android:fillColor="#FFE680"
+        android:pathData="M115,314 Q115,308 121,308 L559,308 Q565,308 565,314 L565,328 L115,328 Z"/>
+
+    <!-- Band engraving lines -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#C9952A"
+        android:strokeWidth="1"
+        android:pathData="M115,328 L559,328"/>
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#B8841A"
+        android:strokeWidth="1"
+        android:pathData="M115,360 L559,360"/>
+
+    <!-- Band bottom trim shadow -->
+    <path
+        android:fillColor="#A87C10"
+        android:pathData="M118,366 Q118,362 122,362 L562,362 Q566,362 566,366 L566,378 Q566,382 562,382 L122,382 Q118,382 118,378 Z"/>
+
+    <!-- Band bottom trim -->
+    <path
+        android:fillColor="#F5C518"
+        android:pathData="M115,363 Q115,359 119,359 L559,359 Q563,359 563,363 L563,375 Q563,379 559,379 L119,379 Q115,379 115,375 Z"/>
+
+    <!-- Band decorative diamonds -->
+    <path android:fillColor="#C9952A" android:pathData="M200,341 L210,332 L220,341 L210,350 Z"/>
+    <path android:fillColor="#FFE680" android:pathData="M200,341 L210,333 L220,341 L210,349 Z"/>
+    <path android:fillColor="#C9952A" android:pathData="M270,341 L280,332 L290,341 L280,350 Z"/>
+    <path android:fillColor="#FFE680" android:pathData="M270,341 L280,333 L290,341 L280,349 Z"/>
+    <path android:fillColor="#C9952A" android:pathData="M390,341 L400,332 L410,341 L400,350 Z"/>
+    <path android:fillColor="#FFE680" android:pathData="M390,341 L400,333 L410,341 L400,349 Z"/>
+    <path android:fillColor="#C9952A" android:pathData="M460,341 L470,332 L480,341 L470,350 Z"/>
+    <path android:fillColor="#FFE680" android:pathData="M460,341 L470,333 L480,341 L470,349 Z"/>
+
+    <!-- ═══════════════════════════════════════════
+         GEMS — SPIRES
+         ═══════════════════════════════════════════ -->
+
+    <!-- Left spire: Ruby -->
+    <path
+        android:fillColor="#E03C5A"
+        android:pathData="M180,148 A18,18 0 1,1 179.99,148 Z"/>
+    <path
+        android:fillColor="#FF6B84"
+        android:pathData="M180,150 L192,162 L180,174 L168,162 Z"/>
+    <path
+        android:fillColor="#B02040"
+        android:pathData="M180,158 L188,166 L180,174 L172,166 Z"/>
+    <path
+        android:fillColor="#8CFFFFFF"
+        android:pathData="M174,160 A6,4 0 1,1 173.99,160 Z"/>
+
+    <!-- Center spire: Sapphire (largest) -->
+    <path
+        android:fillColor="#4A90D9"
+        android:pathData="M340,82 A22,22 0 1,1 339.99,82 Z"/>
+    <path
+        android:fillColor="#74B3F0"
+        android:pathData="M340,84 L356,100 L340,116 L324,100 Z"/>
+    <path
+        android:fillColor="#2563AE"
+        android:pathData="M340,94 L352,106 L340,118 L328,106 Z"/>
+    <path
+        android:fillColor="#8CFFFFFF"
+        android:pathData="M332,97 A7,5 0 1,1 331.99,97 Z"/>
+
+    <!-- Right spire: Emerald -->
+    <path
+        android:fillColor="#2EC97E"
+        android:pathData="M500,148 A18,18 0 1,1 499.99,148 Z"/>
+    <path
+        android:fillColor="#5EE8A0"
+        android:pathData="M500,150 L512,162 L500,174 L488,162 Z"/>
+    <path
+        android:fillColor="#1A8A52"
+        android:pathData="M500,158 L508,166 L500,174 L492,166 Z"/>
+    <path
+        android:fillColor="#8CFFFFFF"
+        android:pathData="M494,160 A6,4 0 1,1 493.99,160 Z"/>
+
+    <!-- ═══════════════════════════════════════════
+         GEMS — BAND
+         ═══════════════════════════════════════════ -->
+
+    <!-- Band center: Ruby (large) -->
+    <path
+        android:fillColor="#E03C5A"
+        android:pathData="M337,321 A22,22 0 1,1 336.99,321 Z"/>
+    <path
+        android:fillColor="#FF6B84"
+        android:pathData="M337,323 L353,339 L337,355 L321,339 Z"/>
+    <path
+        android:fillColor="#B02040"
+        android:pathData="M337,333 L349,345 L337,357 L325,345 Z"/>
+    <path
+        android:fillColor="#8CFFFFFF"
+        android:pathData="M329,336 A7,5 0 1,1 328.99,336 Z"/>
+
+    <!-- Band left: Emerald -->
+    <path
+        android:fillColor="#2EC97E"
+        android:pathData="M170,327 A16,16 0 1,1 169.99,327 Z"/>
+    <path
+        android:fillColor="#5EE8A0"
+        android:pathData="M170,329 L182,341 L170,353 L158,341 Z"/>
+    <path
+        android:fillColor="#1A8A52"
+        android:pathData="M170,337 L179,346 L170,355 L161,346 Z"/>
+    <path
+        android:fillColor="#8CFFFFFF"
+        android:pathData="M164,337 A5,3.5 0 1,1 163.99,337 Z"/>
+
+    <!-- Band right: Sapphire -->
+    <path
+        android:fillColor="#4A90D9"
+        android:pathData="M508,327 A16,16 0 1,1 507.99,327 Z"/>
+    <path
+        android:fillColor="#74B3F0"
+        android:pathData="M508,329 L520,341 L508,353 L496,341 Z"/>
+    <path
+        android:fillColor="#2563AE"
+        android:pathData="M508,337 L517,346 L508,355 L499,346 Z"/>
+    <path
+        android:fillColor="#8CFFFFFF"
+        android:pathData="M502,337 A5,3.5 0 1,1 501.99,337 Z"/>
+
+</vector>

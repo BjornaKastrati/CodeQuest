@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- XOR Gate - OR shape with extra curved line at input -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="70dp"
+    android:viewportWidth="100"
+    android:viewportHeight="70">
+
+    <!-- Gate body (same as OR) -->
+    <path android:fillColor="#1A3A5CFF"
+          android:strokeColor="#00D4FF"
+          android:strokeWidth="2.5"
+          android:pathData="M15,10 Q35,10 75,35 Q35,60 15,60 Q30,35 15,10 Z"/>
+
+    <!-- Extra XOR curve line -->
+    <path android:fillColor="#00000000"
+          android:strokeColor="#00D4FF"
+          android:strokeWidth="2.5"
+          android:pathData="M8,10 Q23,35 8,60"/>
+
+    <!-- Input line A -->
+    <path android:fillColor="#00000000"
+          android:strokeColor="#00D4FF"
+          android:strokeWidth="2"
+          android:pathData="M0,22 L14,22"/>
+
+    <!-- Input line B -->
+    <path android:fillColor="#00000000"
+          android:strokeColor="#00D4FF"
+          android:strokeWidth="2"
+          android:pathData="M0,48 L14,48"/>
+
+    <!-- Output line -->
+    <path android:fillColor="#00000000"
+          android:strokeColor="#00D4FF"
+          android:strokeWidth="2"
+          android:pathData="M75,35 L100,35"/>
+
+</vector>

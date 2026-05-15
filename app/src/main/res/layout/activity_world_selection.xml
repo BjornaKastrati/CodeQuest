@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="start"
+            android:background="@drawable/bg_back_button"
+            android:contentDescription="Back"
+            android:padding="9dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:tint="@android:color/holo_blue_dark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:letterSpacing="0.06"
+            android:text="Choose Your World"
+            android:textColor="@color/cq_text"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="26dp"
+            android:gravity="center"
+            android:text="Complete all levels to unlock the next world."
+            android:textColor="@color/cq_muted"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/cardWorld1"
+            android:layout_width="match_parent"
+            android:layout_height="136dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/card_unlocked"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="3dp"
+            android:paddingStart="22dp"
+            android:paddingEnd="22dp"
+            android:text="01 Digital Logic Lab&#10;Turn logic into light.&#10;&#10;UNLOCKED"
+            android:textColor="@color/cq_text"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cardWorld2"
+            android:layout_width="match_parent"
+            android:layout_height="136dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/card_locked"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="3dp"
+            android:paddingStart="22dp"
+            android:paddingEnd="22dp"
+            android:text="02 Programming Temple&#10;Read, write, order, and optimize code.&#10;&#10;LOCKED"
+            android:textColor="@color/cq_text"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cardWorld3"
+            android:layout_width="match_parent"
+            android:layout_height="136dp"
+            android:background="@drawable/card_locked"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="3dp"
+            android:paddingStart="22dp"
+            android:paddingEnd="22dp"
+            android:text="03 Data Structures Forest&#10;Master how data is stored and moved.&#10;&#10;LOCKED"
+            android:textColor="@color/cq_text"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

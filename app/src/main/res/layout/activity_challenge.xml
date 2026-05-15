@@ -1,0 +1,1271 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_gradient">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+
+        <TextView
+            android:id="@+id/txtLevelTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level Title"
+            android:textColor="@color/cq_text"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/txtScenarioProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scenario 1/3"
+            android:textColor="@color/cq_muted"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtInstruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Instruction"
+            android:textColor="@color/cq_text"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginTop="22dp" />
+
+        <!-- SINGLE-GATE CIRCUIT -->
+        <FrameLayout
+            android:id="@+id/layoutCircuit"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/card_unlocked"
+            android:padding="8dp"
+            android:visibility="gone">
+
+            <!-- Input A bulb -->
+            <ImageView
+                android:id="@+id/imgInputA"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:contentDescription="Input A bulb"
+                android:src="@drawable/bulb_off" />
+
+            <TextView
+                android:id="@+id/txtInputA"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="88dp"
+                android:gravity="center"
+                android:text="A: OFF"
+                android:textColor="@color/cq_text"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <!-- Input B bulb -->
+            <ImageView
+                android:id="@+id/imgInputB"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="140dp"
+                android:contentDescription="Input B bulb"
+                android:src="@drawable/bulb_off" />
+
+            <TextView
+                android:id="@+id/txtInputB"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="198dp"
+                android:gravity="center"
+                android:text="B: OFF"
+                android:textColor="@color/cq_text"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <!-- A wire: bulb to gate input -->
+            <View
+                android:layout_width="38dp"
+                android:layout_height="5dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="57dp"
+                android:background="@drawable/wire_blue" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="57dp"
+                android:background="@drawable/wire_blue" />
+
+            <View
+                android:layout_width="42dp"
+                android:layout_height="5dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="102dp"
+                android:background="@drawable/wire_blue" />
+
+            <!-- B wire: bulb to gate input -->
+            <View
+                android:layout_width="38dp"
+                android:layout_height="5dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="167dp"
+                android:background="@drawable/wire_blue" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="140dp"
+                android:background="@drawable/wire_blue" />
+
+            <View
+                android:layout_width="42dp"
+                android:layout_height="5dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="138dp"
+                android:background="@drawable/wire_blue" />
+
+            <!-- Logic gate -->
+            <ImageView
+                android:id="@+id/imgGate"
+                android:layout_width="135dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="73dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="Logic gate"
+                android:src="@drawable/gate_and" />
+
+            <!-- Output wire -->
+            <View
+                android:layout_width="30dp"
+                android:layout_height="3dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="121dp"
+                android:background="@drawable/wire_blue" />
+
+            <!-- Output bulb -->
+            <ImageView
+                android:id="@+id/imgOutput"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="92dp"
+                android:contentDescription="Output bulb"
+                android:src="@drawable/bulb_off" />
+
+            <TextView
+                android:id="@+id/txtOutput"
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="158dp"
+                android:gravity="center"
+                android:text="OUT: OFF"
+                android:textColor="@color/cq_text"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtGateLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="AND Gate"
+                android:textColor="@color/cq_primary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <!-- BOSS MULTI-GATE CIRCUIT -->
+        <LinearLayout
+            android:id="@+id/layoutBossCircuit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/card_unlocked"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txtBossCircuitTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="Boss Circuit"
+                android:textColor="@color/cq_primary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:id="@+id/bossHorizontalScroll"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:fillViewport="false"
+                android:scrollbars="none">
+
+                <FrameLayout
+                    android:id="@+id/bossCircuitFrame"
+                    android:layout_width="560dp"
+                    android:layout_height="300dp">
+
+                    <!-- INPUT A -->
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="5dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="84dp"
+                        android:layout_marginTop="60dp"
+                        android:background="@drawable/wire_blue" />
+
+                    <ImageView
+                        android:id="@+id/imgBossInputA"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="38dp"
+                        android:contentDescription="Input A"
+                        android:src="@drawable/bulb_off" />
+
+                    <TextView
+                        android:id="@+id/txtBossInputA"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="82dp"
+                        android:gravity="center"
+                        android:text="A: OFF"
+                        android:textColor="@color/cq_text"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <!-- INPUT B -->
+                    <ImageView
+                        android:id="@+id/imgBossInputB"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="102dp"
+                        android:contentDescription="Input B"
+                        android:src="@drawable/bulb_off" />
+
+                    <TextView
+                        android:id="@+id/txtBossInputB"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="146dp"
+                        android:gravity="center"
+                        android:text="B: OFF"
+                        android:textColor="@color/cq_text"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <!-- INPUT C -->
+                    <ImageView
+                        android:id="@+id/imgBossInputC"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="214dp"
+                        android:contentDescription="Input C"
+                        android:src="@drawable/bulb_off" />
+
+                    <TextView
+                        android:id="@+id/txtBossInputC"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="258dp"
+                        android:gravity="center"
+                        android:text="C: OFF"
+                        android:textColor="@color/cq_text"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <!-- WIRE A: bulb A to first gate upper input -->
+                    <View
+                        android:layout_width="34dp"
+                        android:layout_height="4dp"
+                        android:layout_marginStart="52dp"
+                        android:layout_marginTop="60dp"
+                        android:background="@drawable/wire_blue" />
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="300dp"
+                        android:layout_marginTop="208dp"
+                        android:background="@drawable/wire_blue" />
+
+                    <View
+                        android:layout_width="52dp"
+                        android:layout_height="4dp"
+                        android:layout_marginStart="84dp"
+                        android:layout_marginTop="90dp"
+                        android:background="@drawable/wire_blue" />
+
+                    <!-- WIRE B: bulb B to first gate lower input -->
+                    <View
+                        android:layout_width="34dp"
+                        android:layout_height="4dp"
+                        android:layout_marginStart="52dp"
+                        android:layout_marginTop="124dp"
+                        android:background="@drawable/wire_blue" />
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="8dp"
+                        android:layout_marginStart="84dp"
+                        android:layout_marginTop="120dp"
+                        android:background="@drawable/wire_blue" />
+
+                    <View
+                        android:layout_width="52dp"
+                        android:layout_height="4dp"
+                        android:layout_marginStart="84dp"
+                        android:layout_marginTop="118dp"
+                        android:background="@drawable/wire_blue" />
+
+                    <!-- GATE 1 -->
+                    <ImageView
+                        android:id="@+id/imgBossGate1"
+                        android:layout_width="112dp"
+                        android:layout_height="82dp"
+                        android:layout_marginStart="128dp"
+                        android:layout_marginTop="66dp"
+                        android:contentDescription="First logic gate"
+                        android:src="@drawable/gate_and" />
+
+                    <!-- WIRE: gate 1 output to gate 2 upper input -->
+                    <View
+                        android:layout_width="38dp"
+                        android:layout_height="4dp"
+                        android:layout_marginStart="232dp"
+                        android:layout_marginTop="104dp"
+                        android:background="@drawable/wire_blue" />
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="74dp"
+                        android:layout_marginStart="266dp"
+                        android:layout_marginTop="107dp"
+                        android:background="@drawable/wire_blue" />
+
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="4dp"
+                        android:layout_marginStart="268dp"
+                        android:layout_marginTop="178dp"
+                        android:background="@drawable/wire_blue" />
+
+                    <!-- WIRE C: input C to gate 2 lower input -->
+                    <View
+                        android:layout_width="250dp"
+                        android:layout_height="4dp"
+                        android:layout_marginStart="52dp"
+                        android:layout_marginTop="236dp"
+                        android:background="@drawable/wire_blue" />
+
+                    <!-- GATE 2 -->
+                    <ImageView
+                        android:id="@+id/imgBossGate2"
+                        android:layout_width="112dp"
+                        android:layout_height="82dp"
+                        android:layout_marginStart="300dp"
+                        android:layout_marginTop="154dp"
+                        android:contentDescription="Second logic gate"
+                        android:src="@drawable/gate_or" />
+
+                    <!-- WIRE: gate 2 output up to NOT input -->
+                    <View
+                        android:layout_width="34dp"
+                        android:layout_height="4dp"
+                        android:layout_marginStart="404dp"
+                        android:layout_marginTop="192dp"
+                        android:background="@drawable/wire_blue" />
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="86dp"
+                        android:layout_marginStart="436dp"
+                        android:layout_marginTop="110dp"
+                        android:background="@drawable/wire_blue" />
+
+                    <View
+                        android:layout_width="34dp"
+                        android:layout_height="4dp"
+                        android:layout_marginStart="436dp"
+                        android:layout_marginTop="110dp"
+                        android:background="@drawable/wire_blue" />
+
+                    <!-- NOT GATE -->
+                    <ImageView
+                        android:id="@+id/imgBossGateNot"
+                        android:layout_width="86dp"
+                        android:layout_height="62dp"
+                        android:layout_marginStart="462dp"
+                        android:layout_marginTop="80dp"
+                        android:contentDescription="NOT gate"
+                        android:src="@drawable/gate_not" />
+
+                    <!-- WIRE: NOT to output bulb -->
+                    <View
+                        android:layout_width="28dp"
+                        android:layout_height="4dp"
+                        android:layout_marginStart="540dp"
+                        android:layout_marginTop="110dp"
+                        android:background="@drawable/wire_blue" />
+
+                    <!-- OUTPUT BULB -->
+                    <ImageView
+                        android:id="@+id/imgBossOutput"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="566dp"
+                        android:layout_marginTop="84dp"
+                        android:contentDescription="Output bulb"
+                        android:src="@drawable/bulb_off" />
+
+                    <TextView
+                        android:id="@+id/txtBossOutput"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="552dp"
+                        android:layout_marginTop="138dp"
+                        android:gravity="center"
+                        android:text="OUT: OFF"
+                        android:textColor="@color/cq_text"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                </FrameLayout>
+            </HorizontalScrollView>
+
+            <!-- SIMPLE SCROLL HINT -->
+            <TextView
+                android:id="@+id/txtBossScrollHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="‹ swipe to see full circuit ›"
+                android:textColor="@color/cq_muted"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- BINARY LIGHTS PANEL -->
+        <LinearLayout
+            android:id="@+id/layoutBinaryPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/card_unlocked"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgBinaryBulb1"
+                        android:layout_width="58dp"
+                        android:layout_height="58dp"
+                        android:src="@drawable/bulb_off" />
+
+                    <TextView
+                        android:id="@+id/txtBinaryBit1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/cq_text"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgBinaryBulb2"
+                        android:layout_width="58dp"
+                        android:layout_height="58dp"
+                        android:src="@drawable/bulb_off" />
+
+                    <TextView
+                        android:id="@+id/txtBinaryBit2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/cq_text"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgBinaryBulb3"
+                        android:layout_width="58dp"
+                        android:layout_height="58dp"
+                        android:src="@drawable/bulb_off" />
+
+                    <TextView
+                        android:id="@+id/txtBinaryBit3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/cq_text"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgBinaryBulb4"
+                        android:layout_width="58dp"
+                        android:layout_height="58dp"
+                        android:src="@drawable/bulb_off" />
+
+                    <TextView
+                        android:id="@+id/txtBinaryBit4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/cq_text"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/ic_caution" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Remember:"
+                    android:textColor="@color/cq_accent"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtPower1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="2³"
+                    android:textColor="@color/cq_muted"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtPower2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="2²"
+                    android:textColor="@color/cq_muted"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtPower3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="2¹"
+                    android:textColor="@color/cq_muted"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtPower4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="2⁰"
+                    android:textColor="@color/cq_muted"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ARRAY EXPLORER PANEL -->
+        <LinearLayout
+            android:id="@+id/layoutArrayPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txtArrayPrompt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tap the correct array element."
+                android:textColor="#00E5FF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/layoutArrayContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="6dp" />
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+        <!-- CODE DISPLAY PANEL -->
+        <LinearLayout
+            android:id="@+id/layoutCodePanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!-- Terminal header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#263238"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="6dp"
+                    android:text="●"
+                    android:textColor="#EF5350"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="6dp"
+                    android:text="●"
+                    android:textColor="#FFFFCA28"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="10dp"
+                    android:text="●"
+                    android:textColor="#66BB6A"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Main.java"
+                    android:textColor="#90A4AE"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtCodePanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#102027"
+                android:fontFamily="monospace"
+                android:lineSpacingExtra="5dp"
+                android:padding="18dp"
+                android:text="code"
+                android:textColor="#80CBC4"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtCodePrompt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="▶ Select the correct answer:"
+                android:textColor="#00E5FF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- STACK VISUAL PANEL -->
+        <LinearLayout
+            android:id="@+id/layoutStackPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txtStackPrompt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Stack challenge"
+                android:textColor="#00E5FF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:id="@+id/layoutStackCanvas"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/card_unlocked">
+
+                <!-- Draggable new book / also used as top book in pop -->
+                <TextView
+                    android:id="@+id/bookNew"
+                    android:layout_width="125dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/book_blue"
+                    android:gravity="center"
+                    android:text="NEW"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bookTop"
+                    android:layout_width="125dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/book_pink"
+                    android:gravity="center"
+                    android:text="Top"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bookMiddle"
+                    android:layout_width="125dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/book_purple"
+                    android:gravity="center"
+                    android:text="Middle"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bookBottom"
+                    android:layout_width="125dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/book_cyan"
+                    android:gravity="center"
+                    android:text="Bottom"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <!-- Invisible drop zones -->
+                <View
+                    android:id="@+id/dropTop"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp" />
+
+                <View
+                    android:id="@+id/dropMiddle"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp" />
+
+                <View
+                    android:id="@+id/dropBottom"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp" />
+
+                <View
+                    android:id="@+id/dropUnder"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- QUEUE VISUAL PANEL -->
+        <LinearLayout
+            android:id="@+id/layoutQueuePanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txtQueuePrompt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Queue challenge"
+                android:textColor="#00E5FF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:id="@+id/layoutQueueCanvas"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/card_unlocked">
+
+                <ImageView
+                    android:id="@+id/imgCheckoutStand"
+                    android:layout_width="95dp"
+                    android:layout_height="78dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="70dp"
+                    android:src="@drawable/checkout_stand" />
+
+                <TextView
+                    android:id="@+id/txtFrontDesk"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="140dp"
+                    android:gravity="center"
+                    android:text="Checkout"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/personA"
+                    android:layout_width="45dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/person_cyan" />
+
+                <ImageView
+                    android:id="@+id/personB"
+                    android:layout_width="45dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/person_purple" />
+
+                <ImageView
+                    android:id="@+id/personC"
+                    android:layout_width="45dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/person_pink" />
+
+                <ImageView
+                    android:id="@+id/personD"
+                    android:layout_width="45dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/person_blue" />
+
+                <TextView
+                    android:id="@+id/labelA"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="A"
+                    android:textColor="@color/cq_text"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/labelB"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="B"
+                    android:textColor="@color/cq_text"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/labelC"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="C"
+                    android:textColor="@color/cq_text"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/labelD"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="D"
+                    android:textColor="@color/cq_text"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- Invisible enqueue drop zones -->
+                <View
+                    android:id="@+id/dropBeforeA"
+                    android:layout_width="48dp"
+                    android:layout_height="95dp" />
+
+                <View
+                    android:id="@+id/dropBetweenAB"
+                    android:layout_width="48dp"
+                    android:layout_height="95dp" />
+
+                <View
+                    android:id="@+id/dropBetweenBC"
+                    android:layout_width="48dp"
+                    android:layout_height="95dp" />
+
+                <View
+                    android:id="@+id/dropAfterC"
+                    android:layout_width="48dp"
+                    android:layout_height="95dp" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- TREE VISUAL PANEL -->
+        <LinearLayout
+            android:id="@+id/layoutTreePanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txtTreePrompt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tap the tree nodes in order."
+                android:textColor="#00E5FF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTreeHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:text="Hint"
+                android:textColor="@color/cq_muted"
+                android:textSize="13sp" />
+
+            <com.example.codequest.views.TreeCanvasView
+                android:id="@+id/treeCanvasView"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:id="@+id/txtTreeSequence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#0D2137"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Your sequence: tap nodes above"
+                android:textColor="@color/cq_muted"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnTreeReset"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_secondary"
+                android:text="Reset Tree"
+                android:textColor="@color/cq_text"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- DRAG CODE ORDERING PANEL -->
+        <LinearLayout
+            android:id="@+id/layoutCodeOrderPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txtCodeOrderPrompt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Arrange the code blocks in the correct order."
+                android:textColor="#00E5FF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Drag a block over another block to place it before it. Tap a block to move it to the bottom."
+                android:textColor="@color/cq_muted"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:id="@+id/codeArrangeZone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="#0D2137"
+                android:minHeight="230dp"
+                android:orientation="vertical"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <!-- CODE CHOICE / OPTIMIZATION PANEL -->
+        <LinearLayout
+            android:id="@+id/layoutCodeChoicePanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txtCodeChoicePrompt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tap the better code snippet."
+                android:textColor="#00E5FF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/txtCodeChoice1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/code_snippet_normal"
+                android:fontFamily="monospace"
+                android:lineSpacingExtra="5dp"
+                android:padding="18dp"
+                android:text="code option 1"
+                android:textColor="#80CBC4"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtCodeChoice2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/code_snippet_normal"
+                android:fontFamily="monospace"
+                android:lineSpacingExtra="5dp"
+                android:padding="18dp"
+                android:text="code option 2"
+                android:textColor="#80CBC4"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <!-- OPTIONS -->
+        <LinearLayout
+            android:id="@+id/layoutOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnOption1"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/option_card"
+                android:textAllCaps="false"
+                android:textColor="@color/cq_text" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnOption2"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/option_card"
+                android:textAllCaps="false"
+                android:textColor="@color/cq_text" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnOption3"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/option_card"
+                android:textAllCaps="false"
+                android:textColor="@color/cq_text" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnOption4"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/option_card"
+                android:textAllCaps="false"
+                android:textColor="@color/cq_text" />
+        </LinearLayout>
+
+        <!-- TEXT INPUT -->
+        <LinearLayout
+            android:id="@+id/layoutTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="24dp">
+
+            <EditText
+                android:id="@+id/editAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="Type your answer here..."
+                android:textColor="@color/cq_text"
+                android:textColorHint="@color/cq_muted"
+                android:background="@drawable/option_card"
+                android:padding="14dp"
+                android:singleLine="false"
+                android:fontFamily="monospace" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCheck"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/btn_primary"
+            android:text="Check Answer"
+            android:textAllCaps="false"
+            android:textColor="@color/cq_text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/cq_text"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_marginTop="18dp" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/btn_secondary"
+            android:text="Next Scenario"
+            android:textAllCaps="false"
+            android:textColor="@color/cq_text"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_back_button"
+        android:contentDescription="Back"
+        android:padding="9dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:tint="@android:color/holo_blue_dark" />
+
+</FrameLayout>

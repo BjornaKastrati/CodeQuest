@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- AND Gate - classic D-shape symbol -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="70dp"
+    android:viewportWidth="100"
+    android:viewportHeight="70">
+
+    <!-- Gate body: flat left side + D-curve right -->
+    <path android:fillColor="#1A3A5C"
+          android:strokeColor="#00D4FF"
+          android:strokeWidth="2.5"
+          android:pathData="M10,10 L50,10 A25,25 0 0 1 50,60 L10,60 Z"/>
+
+    <!-- Input line A (top) -->
+    <path android:fillColor="#00000000"
+          android:strokeColor="#00D4FF"
+          android:strokeWidth="2"
+          android:pathData="M0,22 L10,22"/>
+
+    <!-- Input line B (bottom) -->
+    <path android:fillColor="#00000000"
+          android:strokeColor="#00D4FF"
+          android:strokeWidth="2"
+          android:pathData="M0,48 L10,48"/>
+
+    <!-- Output line -->
+    <path android:fillColor="#00000000"
+          android:strokeColor="#00D4FF"
+          android:strokeWidth="2"
+          android:pathData="M75,35 L100,35"/>
+
+</vector>

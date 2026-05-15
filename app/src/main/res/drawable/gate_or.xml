@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- OR Gate - curved shield shape -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="70dp"
+    android:viewportWidth="100"
+    android:viewportHeight="70">
+
+    <!-- Gate body: curved input side + pointed output -->
+    <path android:fillColor="#1A3A5CFF"
+          android:strokeColor="#00D4FF"
+          android:strokeWidth="2.5"
+          android:pathData="M10,10 Q30,10 75,35 Q30,60 10,60 Q25,35 10,10 Z"/>
+
+    <!-- Input line A -->
+    <path android:fillColor="#00000000"
+          android:strokeColor="#00D4FF"
+          android:strokeWidth="2"
+          android:pathData="M0,22 L16,22"/>
+
+    <!-- Input line B -->
+    <path android:fillColor="#00000000"
+          android:strokeColor="#00D4FF"
+          android:strokeWidth="2"
+          android:pathData="M0,48 L16,48"/>
+
+    <!-- Output line -->
+    <path android:fillColor="#00000000"
+          android:strokeColor="#00D4FF"
+          android:strokeWidth="2"
+          android:pathData="M75,35 L100,35"/>
+
+</vector>

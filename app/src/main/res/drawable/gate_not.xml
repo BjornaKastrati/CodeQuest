@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- NOT Gate - triangle with bubble at output -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="60dp"
+    android:viewportWidth="80"
+    android:viewportHeight="60">
+
+    <!-- Triangle body -->
+    <path android:fillColor="#1A3A5CFF"
+          android:strokeColor="#00D4FF"
+          android:strokeWidth="2.5"
+          android:pathData="M10,5 L10,55 L62,30 Z"/>
+
+    <!-- Output bubble (inversion circle) - drawn as path -->
+    <path android:fillColor="#1C2033"
+          android:strokeColor="#00D4FF"
+          android:strokeWidth="2"
+          android:pathData="M62,25 A5,5 0 1 1 61.99,25 Z"/>
+
+    <!-- Input line -->
+    <path android:fillColor="#00000000"
+          android:strokeColor="#00D4FF"
+          android:strokeWidth="2"
+          android:pathData="M0,30 L10,30"/>
+
+    <!-- Output line -->
+    <path android:fillColor="#00000000"
+          android:strokeColor="#00D4FF"
+          android:strokeWidth="2"
+          android:pathData="M67,30 L80,30"/>
+
+</vector>

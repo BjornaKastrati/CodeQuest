@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F172A"
+    android:padding="24dp">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_back_button"
+        android:contentDescription="Back"
+        android:padding="9dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:tint="@android:color/holo_blue_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtVictoryTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="World Complete!"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/txtVictoryMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/txtVictoryMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="You conquered this world! Take a Victory Selfie?"
+        android:textColor="#E5E7EB"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/txtVictoryTitle"
+        app:layout_constraintBottom_toTopOf="@id/btnTakeSelfie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnTakeSelfie"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:text="Take Victory Selfie"
+        android:textSize="18sp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/txtVictoryMessage"
+        app:layout_constraintBottom_toTopOf="@id/btnSkipSelfie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnSkipSelfie"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:text="Skip"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnTakeSelfie"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

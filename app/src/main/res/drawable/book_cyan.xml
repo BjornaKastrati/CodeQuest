@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="60dp"
+    android:viewportWidth="200"
+    android:viewportHeight="60">
+
+    <!-- Back / bottom cover -->
+    <path
+        android:fillColor="#118B9A"
+        android:pathData="
+            M24,4
+            Q4,4 4,12
+            Q4,48 4,48
+            Q4,56 24,56
+            L178,56
+            Q184,56 186,52
+            C174,46 174,14 186,8
+            Q184,4 178,4
+            Z" />
+
+    <!-- Pages block with inward curved right edge -->
+    <path
+        android:fillColor="#F0E4C2"
+        android:pathData="
+            M26,8
+            L176,8
+            C164,14 164,46 176,52
+            L26,52
+            Z" />
+
+    <!-- Page lines, shortened so they do not pass the curve -->
+    <path android:fillColor="#D8C99A" android:pathData="M26,12 L170,12 L170,13 L26,13 Z" />
+    <path android:fillColor="#C8B880" android:pathData="M26,16 L168,16 L168,17 L26,17 Z" />
+    <path android:fillColor="#D8C99A" android:pathData="M26,20 L166,20 L166,21 L26,21 Z" />
+    <path android:fillColor="#C8B880" android:pathData="M26,24 L165,24 L165,25 L26,25 Z" />
+    <path android:fillColor="#B8A870" android:pathData="M26,28 L164,28 L164,29 L26,29 Z" />
+    <path android:fillColor="#C8B880" android:pathData="M26,32 L164,32 L164,33 L26,33 Z" />
+    <path android:fillColor="#D8C99A" android:pathData="M26,36 L165,36 L165,37 L26,37 Z" />
+    <path android:fillColor="#C8B880" android:pathData="M26,40 L166,40 L166,41 L26,41 Z" />
+    <path android:fillColor="#D8C99A" android:pathData="M26,44 L168,44 L168,45 L26,45 Z" />
+    <path android:fillColor="#C8B880" android:pathData="M26,48 L170,48 L170,49 L26,49 Z" />
+
+    <!-- Inward curved page edge: looks like "(" -->
+    <path
+        android:fillColor="#E8D8B0"
+        android:pathData="
+            M176,8
+            C164,14 164,46 176,52
+            L186,52
+            C174,46 174,14 186,8
+            Z" />
+
+    <!-- Inner curve shadow -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#A08850"
+        android:strokeWidth="0.8"
+        android:pathData="
+            M176,8
+            C166,18 166,42 176,52" />
+
+    <!-- Spine -->
+    <path
+        android:fillColor="#14B8C8"
+        android:pathData="
+            M26,8
+            Q4,8 4,30
+            Q4,52 26,52
+            L26,8
+            Z" />
+
+    <!-- Spine highlight -->
+    <path
+        android:fillColor="#5EEAF2"
+        android:pathData="
+            M22,10
+            Q10,10 9,30
+            Q10,50 22,50
+            L24,50
+            Q12,48 12,30
+            Q12,12 24,12
+            Z" />
+
+    <!-- Top cover strip -->
+    <path
+        android:fillColor="#13AFC0"
+        android:pathData="
+            M26,4
+            L178,4
+            Q184,4 186,8
+            L176,8
+            L26,8
+            Z" />
+
+    <!-- Bottom cover strip -->
+    <path
+        android:fillColor="#0D6F7A"
+        android:pathData="
+            M26,52
+            L176,52
+            L186,52
+            Q184,56 178,56
+            L26,56
+            Z" />
+
+</vector>

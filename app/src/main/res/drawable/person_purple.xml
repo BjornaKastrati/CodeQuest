@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Realistic flat-style standing human figure
+    Shirt: #7C3AED (purple)  Hair: #1A1A1A (black)  Eyes: #8B5E3C (brown)
+    Skin: LIGHTER TONE  Pants: #374151  Shoes: #3B1F0A (brown leather)
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="70dp"
+    android:height="160dp"
+    android:viewportWidth="70"
+    android:viewportHeight="160">
+
+    <!-- SHOES - brown leather -->
+    <path android:fillColor="#3B1F0A" android:pathData="M22,148 Q17,148 16,152 Q15,156 20,157 L34,157 L34,148 Z" />
+    <path android:fillColor="#5C3318" android:pathData="M16,154 Q15,157 20,157 L34,157 L34,155 L20,155 Q17,155 16,154 Z" />
+    <path android:fillColor="#3B1F0A" android:pathData="M36,148 L36,157 L50,157 Q55,157 54,152 Q53,148 48,148 Z" />
+    <path android:fillColor="#5C3318" android:pathData="M36,155 L36,157 L50,157 Q53,157 54,154 Q52,155 50,155 Z" />
+
+    <!-- PANTS - dark grey -->
+    <path android:fillColor="#374151" android:pathData="M22,100 L34,100 L34,150 L22,150 Z" />
+    <path android:fillColor="#1F2937" android:pathData="M32,100 L34,100 L34,150 L32,150 Z" />
+    <path android:fillColor="#374151" android:pathData="M36,100 L48,100 L48,150 L36,150 Z" />
+    <path android:fillColor="#1F2937" android:pathData="M36,100 L38,100 L38,150 L36,150 Z" />
+    <path android:fillColor="#1F2937" android:pathData="M34,100 L36,100 L36,108 L34,108 Z" />
+
+    <!-- BELT -->
+    <path android:fillColor="#111827" android:pathData="M22,96 L48,96 L48,101 L22,101 Z" />
+    <path android:fillColor="#C9A84C" android:pathData="M32,97 L38,97 L38,100 L32,100 Z" />
+    <path android:fillColor="#F0C040" android:pathData="M33,97.5 L37,97.5 L37,99.5 L33,99.5 Z" />
+
+    <!-- SHIRT - purple -->
+    <path android:fillColor="#7C3AED" android:pathData="M20,58 Q18,60 18,64 L18,96 L52,96 L52,64 Q52,60 50,58 Z" />
+    <path android:fillColor="#6D28D9" android:pathData="M18,64 L18,96 L22,96 L22,62 Q20,60 18,64 Z" />
+    <path android:fillColor="#6D28D9" android:pathData="M48,62 L48,96 L52,96 L52,64 Q52,60 48,62 Z" />
+    <path android:fillColor="#6D28D9" android:pathData="M31,58 L35,66 L39,58 Z" />
+    <path android:fillColor="#6D28D9" android:pathData="M34,66 L34,95 L36,95 L36,66 Z" />
+    <path android:fillColor="#5B21B6" android:pathData="M34.5,70 A1,1 0,1,1 34.4,70 Z" />
+    <path android:fillColor="#5B21B6" android:pathData="M34.5,76 A1,1 0,1,1 34.4,76 Z" />
+    <path android:fillColor="#5B21B6" android:pathData="M34.5,82 A1,1 0,1,1 34.4,82 Z" />
+    <path android:fillColor="#5B21B6" android:pathData="M34.5,88 A1,1 0,1,1 34.4,88 Z" />
+
+    <!-- ARMS - purple sleeves -->
+    <path android:fillColor="#7C3AED" android:pathData="M18,58 Q13,60 12,66 L12,90 Q12,94 16,94 L20,94 L20,58 Z" />
+    <path android:fillColor="#6D28D9" android:pathData="M12,66 L12,90 Q12,94 16,94 L18,94 L18,82 Q14,80 14,70 Z" />
+    <path android:fillColor="#F2C7A5" android:pathData="M12,90 Q11,96 13,100 L17,100 Q19,96 20,90 Z" />
+    <path android:fillColor="#D9A47F" android:pathData="M11,100 Q10,106 13,108 Q16,110 18,107 Q20,104 19,100 Z" />
+    <path android:fillColor="#F2C7A5" android:pathData="M10,102 Q8,104 10,106 Q12,107 13,105 Z" />
+    <path android:fillColor="#7C3AED" android:pathData="M50,58 L50,94 L54,94 Q58,94 58,90 L58,66 Q57,60 52,58 Z" />
+    <path android:fillColor="#6D28D9" android:pathData="M52,58 L50,58 L50,94 L52,94 L52,82 Q56,78 56,68 Z" />
+    <path android:fillColor="#F2C7A5" android:pathData="M50,90 Q51,96 51,100 L55,100 Q57,96 58,90 Z" />
+    <path android:fillColor="#D9A47F" android:pathData="M51,100 Q51,104 52,107 Q54,110 57,108 Q60,106 59,100 Z" />
+    <path android:fillColor="#F2C7A5" android:pathData="M57,102 Q59,104 60,106 Q62,105 60,102 Z" />
+
+    <!-- NECK - lighter skin -->
+    <path android:fillColor="#F2C7A5" android:pathData="M30,42 L30,60 L40,60 L40,42 Z" />
+    <path android:fillColor="#D9A47F" android:pathData="M30,42 L30,60 L33,60 L33,42 Z" />
+    <path android:fillColor="#7C3AED" android:pathData="M28,56 Q30,52 35,50 Q40,52 42,56 L40,60 Q35,57 30,60 Z" />
+
+    <!-- HEAD - lighter skin -->
+    <path android:fillColor="#F2C7A5" android:pathData="M20,22 Q20,8 35,6 Q50,8 50,22 L50,38 Q50,46 35,47 Q20,46 20,38 Z" />
+    <path android:fillColor="#D9A47F" android:pathData="M20,22 Q20,8 25,7 L23,8 Q20,12 20,22 L20,38 Q20,44 25,46 Q20,44 20,38 Z" />
+
+    <!-- HAIR - black -->
+    <path android:fillColor="#1A1A1A" android:pathData="M20,22 Q19,8 35,5 Q51,8 50,22 L50,18 Q50,4 35,2 Q20,4 20,18 Z" />
+    <path android:fillColor="#1A1A1A" android:pathData="M20,18 L20,26 Q19,24 19,20 Z" />
+    <path android:fillColor="#1A1A1A" android:pathData="M50,18 L50,26 Q51,24 51,20 Z" />
+
+    <!-- EARS - lighter skin -->
+    <path android:fillColor="#F2C7A5" android:pathData="M19,26 Q16,27 16,30 Q16,33 19,34 L21,34 L21,26 Z" />
+    <path android:fillColor="#D9A47F" android:pathData="M17,29 Q17,31 18,32 L19,32 L19,29 Z" />
+    <path android:fillColor="#F2C7A5" android:pathData="M51,26 L49,26 L49,34 L51,34 Q54,33 54,30 Q54,27 51,26 Z" />
+    <path android:fillColor="#D9A47F" android:pathData="M51,29 L52,29 L52,32 L51,32 Q52,31 52,30 Z" />
+
+    <!-- EYES - brown irises -->
+    <path android:fillColor="#FFFFFF" android:pathData="M25,26 Q25,23 28,23 Q31,23 31,26 Q31,29 28,29 Q25,29 25,26 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M39,26 Q39,23 42,23 Q45,23 45,26 Q45,29 42,29 Q39,29 39,26 Z" />
+    <path android:fillColor="#8B5E3C" android:pathData="M26.5,26 A2,2 0,1,1 26.4,26 Z" />
+    <path android:fillColor="#8B5E3C" android:pathData="M40.5,26 A2,2 0,1,1 40.4,26 Z" />
+    <path android:fillColor="#1A1A1A" android:pathData="M27,26 A1,1 0,1,1 26.9,26 Z" />
+    <path android:fillColor="#1A1A1A" android:pathData="M41,26 A1,1 0,1,1 40.9,26 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M27.8,25 A0.5,0.5 0,1,1 27.75,25 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M41.8,25 A0.5,0.5 0,1,1 41.75,25 Z" />
+
+    <!-- EYEBROWS - black -->
+    <path android:fillColor="#111111" android:pathData="M25,21 Q28,19.5 31,21 L31,22 Q28,20.5 25,22 Z" />
+    <path android:fillColor="#111111" android:pathData="M39,21 Q42,19.5 45,21 L45,22 Q42,20.5 39,22 Z" />
+
+    <!-- NOSE -->
+    <path android:fillColor="#D9A47F" android:pathData="M34,29 Q33,33 31,35 Q33,36 35,35 Q37,36 39,35 Q37,33 36,29 Z" />
+
+    <!-- MOUTH -->
+    <path android:fillColor="#C06848" android:pathData="M28,39 Q35,44 42,39 Q38,42 35,42 Q32,42 28,39 Z" />
+    <path android:fillColor="#A85030" android:pathData="M28,39 Q35,37 42,39 Q38,38 35,38 Q32,38 28,39 Z" />
+
+</vector>

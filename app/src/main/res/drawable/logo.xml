@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Main rounded background -->
+    <path
+        android:fillColor="@color/cq_primary"
+        android:pathData="M52,10 L148,10 Q190,10 190,52 L190,148 Q190,190 148,190 L52,190 Q10,190 10,148 L10,52 Q10,10 52,10 Z" />
+
+    <!-- Dark inner card -->
+    <path
+        android:fillColor="@color/cq_bg"
+        android:fillAlpha="0.92"
+        android:pathData="M45,55 L155,55 Q166,55 166,66 L166,136 Q166,147 155,147 L45,147 Q34,147 34,136 L34,66 Q34,55 45,55 Z" />
+
+    <!-- Screen border -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="@color/cq_accent"
+        android:strokeWidth="4"
+        android:pathData="M45,55 L155,55 Q166,55 166,66 L166,136 Q166,147 155,147 L45,147 Q34,147 34,136 L34,66 Q34,55 45,55 Z" />
+
+    <!-- Code bracket left -->
+    <path
+        android:fillColor="@color/cq_accent"
+        android:pathData="M73,82 L55,101 L73,120 L80,113 L69,101 L80,89 Z" />
+
+    <!-- Code bracket right -->
+    <path
+        android:fillColor="@color/cq_accent"
+        android:pathData="M127,82 L145,101 L127,120 L120,113 L131,101 L120,89 Z" />
+
+    <!-- Center lightning / quest mark -->
+    <path
+        android:fillColor="@color/cq_text"
+        android:pathData="M105,70 L84,108 L101,108 L94,134 L121,94 L104,94 Z" />
+
+    <!-- Laptop base -->
+    <path
+        android:fillColor="@color/cq_muted"
+        android:pathData="M54,151 L146,151 Q154,151 158,159 L42,159 Q46,151 54,151 Z" />
+
+    <!-- Small XP star -->
+    <path
+        android:fillColor="@color/cq_accent"
+        android:pathData="M155,35 L160,47 L173,47 L162,55 L167,68 L155,60 L143,68 L148,55 L137,47 L150,47 Z" />
+
+</vector>
